@@ -2,23 +2,28 @@
   <div>
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
+    <city-list :hot="hot" :letter="letter" :cities="cities"></city-list>
   </div>
 </template>
 <script>
 import CityHeader from './components/city-header'
 import CitySearch from './components/city-search'
+import CityList from './components/city-lisy'
 import axios from 'axios'
 
 export default {
   data () {
     return {
-      cities: {}
+      cities: {},
+      hot: [],
+      letter: ''
     }
   },
   name: 'city',
   components: {
     CityHeader,
-    CitySearch
+    CitySearch,
+    CityList
   },
   mounted () {
     this.getCityInfo()
@@ -32,6 +37,7 @@ export default {
       if (currentData.ret && currentData.data) {
         const data = currentData.data
         this.cities = data.cities
+        this.hot = data.hotCities
       }
     }
   }
