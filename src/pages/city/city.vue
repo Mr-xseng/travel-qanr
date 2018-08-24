@@ -4,12 +4,12 @@
   </div>
 </template>
 <script>
-import HomeCity from './components/city-header'
+import CityHeader from './components/city-header'
 
 export default {
   name: 'city',
   components: {
-    HomeCity
+    CityHeader
   }
 }
 </script>
