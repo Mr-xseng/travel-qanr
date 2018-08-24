@@ -9,7 +9,7 @@
     </div>
     <router-link to="/city">
       <div class="header_right">
-        惠州
+        {{this.$store.state.city}}
         <span class="iconfont icon-city">&#xe6aa;</span>
       </div>
     </router-link>
