@@ -3,6 +3,8 @@
     <home-header></home-header>
     <home-swiper :swiperList="swiperList"></home-swiper>
     <home-icons :iconsList="iconsList"></home-icons>
+    <home-recommend :recommendList="recommendList"></home-recommend>
+    <home-weekend :weekendList="weekendList"></home-weekend>
   </div>
 </template>
 <script>
@@ -10,19 +12,25 @@ import HomeHeader from './components/header'
 import HomeSwiper from './components/swiper'
 import axios from 'axios'
 import HomeIcons from './components/icons'
+import HomeRecommend from './components/recommend'
+import HomeWeekend from './components/weekend'
 
 export default {
   name: 'Home',
   data () {
     return {
       swiperList: [],
-      iconsList: []
+      iconsList: [],
+      recommendList: [],
+      weekendList: []
     }
   },
   components: {
     HomeHeader,
     HomeSwiper,
-    HomeIcons
+    HomeIcons,
+    HomeRecommend,
+    HomeWeekend
   },
   methods: {
     getHomeInfo () {
@@ -36,6 +44,8 @@ export default {
         this.swiperList = data.swiperList
         // console.log(this.swiperList)
         this.iconsList = data.iconsList
+        this.recommendList = data.recommendList
+        this.weekendList = data.weekendList
       }
     }
   },
