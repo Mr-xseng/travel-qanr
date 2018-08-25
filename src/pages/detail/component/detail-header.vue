@@ -32,7 +32,7 @@ export default {
         }
         this.showAbs = false
       } else {
-        this.scroll = true
+        this.showAbs = true
       }
     }
   },

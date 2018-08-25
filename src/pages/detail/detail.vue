@@ -6,6 +6,7 @@
     <div class="detail-content">
       <detail-center></detail-center>
       <detail-introduction></detail-introduction>
+      <header-item></header-item>
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import DetailBanner from './component/banner'
 import DetailHeader from './component/detail-header'
 import DetailCenter from './component/center'
 import DetailIntroduction from './component/introduction'
+import HeaderItem from './component/header-item'
 import axios from 'axios'
 
 export default {
@@ -29,14 +31,19 @@ export default {
     DetailBanner,
     DetailHeader,
     DetailCenter,
-    DetailIntroduction
+    DetailIntroduction,
+    HeaderItem
   },
   mounted () {
     this.getBannerInfo()
   },
   methods: {
     getBannerInfo () {
-      axios.get('api/detail.json').then(this.getBannerData)
+      axios.get('api/detail.json', {
+        params: {
+          id: this.$route.params.id
+        }
+      }).then(this.getBannerData)
     },
     getBannerData (xhr) {
       const BannerData = xhr.data
