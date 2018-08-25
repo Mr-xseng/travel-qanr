@@ -3,12 +3,15 @@
     <detail-banner :sightName="sightName" :bannerImg="bannerImg"
     :gallaryImgs="gallaryImgs"></detail-banner>
     <detail-header></detail-header>
-    <div class="detail-content"></div>
+    <div class="detail-content">
+      <detail-center></detail-center>
+    </div>
   </div>
 </template>
 <script>
 import DetailBanner from './component/banner'
 import DetailHeader from './component/detail-header'
+import DetailCenter from './component/center'
 import axios from 'axios'
 
 export default {
@@ -22,7 +25,8 @@ export default {
   },
   components: {
     DetailBanner,
-    DetailHeader
+    DetailHeader,
+    DetailCenter
   },
   mounted () {
     this.getBannerInfo()
