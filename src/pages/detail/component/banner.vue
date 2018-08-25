@@ -14,12 +14,12 @@
       </div>
     </div>
     <!--<detail-fade>-->
-      <!--<common-gallery :images="gallaryImgs" v-show="flag" @Close="handleClose"></common-gallery>-->
+    <common-gallery :images="gallaryImgs" v-show="flag" @Close="handleClose"></common-gallery>
     <!--</detail-fade>-->
   </div>
 </template>
 <script>
-// import CommonGallery from 'common/gallery/Gallery'
+import CommonGallery from '@/common/gallery/gallery'
 // import DetailFade from 'common/fade-ainmation/fade'
 export default {
   props: {
@@ -33,10 +33,10 @@ export default {
     }
   },
   name: 'DetailBanner',
-  // components: {
-  //   CommonGallery,
+  components: {
+    CommonGallery
   //   DetailFade
-  // },
+  },
   methods: {
     handleImgClick () {
       this.flag = true
