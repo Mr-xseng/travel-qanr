@@ -38,6 +38,7 @@ export default {
   methods: {
     handleClick (e) {
       this.$emit('change', e.target.innerText)
+      // console.log('a')
     },
     handleTouchStart () {
       this.touchStatus = true

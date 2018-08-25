@@ -30,6 +30,7 @@ export default {
           const Opacity = scroll / 220 - 0.17
           this.opacityStyle.opacity = Opacity
         }
+        // this.opacityStyle.opacity = 1
         this.showAbs = false
       } else {
         this.showAbs = true
