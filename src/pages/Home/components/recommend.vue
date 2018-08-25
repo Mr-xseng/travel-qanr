@@ -8,7 +8,7 @@
         :to="'/detail/'+item.id"
       >
         <div class="info-img-wrap">
-          <a href="#"><img class="info-img" :src="item.imgUrl"></a>
+          <a href="javascript:;"><img class="info-img" :src="item.imgUrl"></a>
         </div>
         <div class="info-text">
           <p class="text-title">{{item.title}}</p>
