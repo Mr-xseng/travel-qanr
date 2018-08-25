@@ -5,6 +5,7 @@
     <detail-header></detail-header>
     <div class="detail-content">
       <detail-center></detail-center>
+      <detail-introduction></detail-introduction>
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import DetailBanner from './component/banner'
 import DetailHeader from './component/detail-header'
 import DetailCenter from './component/center'
+import DetailIntroduction from './component/introduction'
 import axios from 'axios'
 
 export default {
@@ -26,7 +28,8 @@ export default {
   components: {
     DetailBanner,
     DetailHeader,
-    DetailCenter
+    DetailCenter,
+    DetailIntroduction
   },
   mounted () {
     this.getBannerInfo()
