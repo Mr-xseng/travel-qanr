@@ -1,0 +1,30 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "西岛(AAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1412/85/fc4b88c4d559fd35dfc0f66e0f0e2ee5.water.jpg_350x240_54ff894e.jpg",
+    "gallaryImgs": [
+                    "http://img1.qunarzz.com/sight/p0/1412/85/fc4b88c4d559fd35dfc0f66e0f0e2ee5.water.jpg_350x240_54ff894e.jpg",
+                    "http://img1.qunarzz.com/sight/p0/1412/1c/967814e29521f6efe172b9ec28857cb1.water.jpg_r_800x800_969e26aa.jpg",
+                    "http://img1.qunarzz.com/sight/p0/1412/96/56559e0c687105aad8f96e47897f1555.water.jpg_r_800x800_0ce1e3c5.jpg",
+                    "http://img1.qunarzz.com/sight/p0/1412/45/57a20e7a4b2d4b988d1d68d2e659df46.water.jpg_r_800x800_6070ad60.jpg"
+                    ],
+    "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+  }
+}
